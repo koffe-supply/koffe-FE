@@ -12,6 +12,12 @@ export default function Header() {
   const handleHomePage = () => {
     navigate("/");
   };
+  const handleDIYPage = () => {
+    navigate("/diy_Koffe");
+  };
+  const handleCartFinalPage = () => {
+    navigate("/cart_final");
+  };
   return (
     <>
       <header>
@@ -38,7 +44,9 @@ export default function Header() {
             <div onClick={handleProductPage} className="cursor">
               Sản phẩm
             </div>
-            <div className="cursor">DIY cái bịch KO-FEE</div>
+            <div className="cursor" onClick={handleDIYPage}>
+              DIY cái bịch KO-FEE
+            </div>
             <div className="cursor">Blog</div>
           </Flex>
           <div>
@@ -51,6 +59,7 @@ export default function Header() {
               </div>
               <div className="cursor">
                 <ShoppingCartOutlined
+                  onClick={handleCartFinalPage}
                   style={{ fontSize: "24px", fontWeight: 400 }}
                 />
               </div>

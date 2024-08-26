@@ -6,6 +6,12 @@ import AuthGuard from "./AuthGuard";
 const Login = Loadable({ loader: () => import("../pages/login/Login") });
 const Home = Loadable({ loader: () => import("../pages/home/Home") });
 const Product = Loadable({ loader: () => import("../pages/product/Product") });
+const CartFinal = Loadable({
+  loader: () => import("../pages/cart/CartFinal"),
+});
+const DIYKoffe = Loadable({
+  loader: () => import("../pages/DIYKoffe/DIYKoffe"),
+});
 
 export const router = createBrowserRouter([
   {
@@ -29,10 +35,14 @@ export const router = createBrowserRouter([
             path: "products",
             element: Product,
           },
-          // {
-          //   path: "admin",
-          //   element: Admin,
-          // },
+          {
+            path: "diy_Koffe",
+            element: DIYKoffe,
+          },
+          {
+            path: "cart_final",
+            element: CartFinal,
+          },
         ],
       },
     ],
