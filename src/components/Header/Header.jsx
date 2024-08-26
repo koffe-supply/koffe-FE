@@ -18,6 +18,9 @@ export default function Header() {
   const handleCartFinalPage = () => {
     navigate("/cart_final");
   };
+  const handleProductDetailPage = () => {
+    navigate("/product_detail");
+  };
   return (
     <>
       <header>
@@ -46,6 +49,9 @@ export default function Header() {
             </div>
             <div className="cursor" onClick={handleDIYPage}>
               DIY cái bịch KO-FEE
+            </div>
+            <div className="cursor" onClick={handleProductDetailPage}>
+              ProductDetail
             </div>
             <div className="cursor">Blog</div>
           </Flex>

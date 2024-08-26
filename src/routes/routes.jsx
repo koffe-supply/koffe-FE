@@ -6,6 +6,9 @@ import AuthGuard from "./AuthGuard";
 const Login = Loadable({ loader: () => import("../pages/login/Login") });
 const Home = Loadable({ loader: () => import("../pages/home/Home") });
 const Product = Loadable({ loader: () => import("../pages/product/Product") });
+const ProductDetail = Loadable({
+  loader: () => import("../pages/productDetail/ProductDetail"),
+});
 const CartFinal = Loadable({
   loader: () => import("../pages/cart/CartFinal"),
 });
@@ -42,6 +45,10 @@ export const router = createBrowserRouter([
           {
             path: "cart_final",
             element: CartFinal,
+          },
+          {
+            path: "product_detail",
+            element: ProductDetail,
           },
         ],
       },
