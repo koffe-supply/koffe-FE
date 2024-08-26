@@ -5,12 +5,8 @@ import AuthGuard from "./AuthGuard";
 
 const Login = Loadable({ loader: () => import("../pages/login/Login") });
 const Home = Loadable({ loader: () => import("../pages/home/Home") });
-const Dashboard = Loadable({
-  loader: () => import("../pages/dashboard/Dashboard"),
-});
-const Admin = Loadable({
-  loader: () => import("../pages/admin/Admin"),
-});
+const Product = Loadable({ loader: () => import("../pages/product/Product") });
+
 export const router = createBrowserRouter([
   {
     path: "/login",
@@ -26,16 +22,17 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: Dashboard,
-          },
-          {
-            path: "home",
+            path: "",
             element: Home,
           },
           {
-            path: "admin",
-            element: Admin,
+            path: "products",
+            element: Product,
           },
+          // {
+          //   path: "admin",
+          //   element: Admin,
+          // },
         ],
       },
     ],
