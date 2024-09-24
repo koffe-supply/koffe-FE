@@ -1,6 +1,6 @@
 import { Spin } from "antd";
 import "./Product.css";
-export default function ProductList({ products, isLoading }) {
+export default function ProductList({ products, isLoading, error }) {
   return (
     <>
       {isLoading ? (
@@ -8,6 +8,8 @@ export default function ProductList({ products, isLoading }) {
           size="large"
           style={{ display: "flex", justifyContent: "center" }}
         />
+      ) : error ? (
+        <p>Some thing error</p>
       ) : (
         <div className="product-list-space">
           {products?.map((el) => {

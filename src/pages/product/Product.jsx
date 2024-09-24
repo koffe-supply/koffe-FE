@@ -93,7 +93,11 @@ export default function Product() {
           </div>
         </Col>
         <Col span={16} offset={1}>
-          <ProductList isLoading={isLoading} products={products} />
+          <ProductList
+            error={error}
+            isLoading={isLoading}
+            products={products}
+          />
         </Col>
       </Row>
     </div>

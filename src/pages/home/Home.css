@@ -144,7 +144,7 @@
   border-radius: 20px;
 }
 .home-page .kofee-team {
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 .home-page .kofee-team .header {
   color: #1b392d;
@@ -163,6 +163,7 @@
 .home-page .kofee-team .teammate {
   padding: 20px 20px;
   width: 664px;
+  height: 310px;
   border-radius: 20px;
   background-color: #ddeee3;
   border: 1px solid transparent;

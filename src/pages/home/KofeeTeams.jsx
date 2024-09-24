@@ -11,7 +11,6 @@ export default function KofeeTeams() {
       image:
         "https://firebasestorage.googleapis.com/v0/b/kofee-a0348.appspot.com/o/VanAnh.jpg?alt=media&token=f013ba97-309e-4be1-b6da-b71906974119",
     },
-    // Add more teammate objects as needed
     {
       name: "JOHN DOE",
       role: "Marketing Specialist",
@@ -26,7 +25,6 @@ export default function KofeeTeams() {
         "Jane has a passion for teaching others how to brew the perfect cup of coffee, spreading her love for the craft.",
       image: "https://example.com/janesmith.jpg",
     },
-    // Add 3 more teammates...
   ];
 
   return (

@@ -2,18 +2,20 @@ import { Button, Col, Flex, Row } from "antd";
 import "./Home.css";
 import BeanToBrew from "./BeanToBrew";
 import KofeeTeams from "./KofeeTeams";
+import Carousele from "./Caurosel";
 function Home() {
   return (
     <div className="home-page">
       <div className="top">
         <Row>
-          <Col span={6}>
+          <Col span={8}>
             <img
+              width={"100%"}
               src="https://firebasestorage.googleapis.com/v0/b/kofee-a0348.appspot.com/o/kofee_red.png?alt=media&token=408dd306-8bd7-478d-92c2-4c025644fd6e"
               alt="Coffe Logo"
             ></img>
           </Col>
-          <Col span={14} offset={4} className="content">
+          <Col span={12} offset={4} className="content">
             <p className="title">BỊCH KO-FEE CÓ 102</p>
             <p>Để có một bịch KO-FEE của riêng bạn:</p>
             <ol style={{ marginLeft: 20 }}>
@@ -51,7 +53,7 @@ function Home() {
         <p style={{ textAlign: "center", fontSize: 36 }}>
           /kə.fĭ/ <b>(n)</b>
         </p>
-        <p style={{ padding: "0 360px", fontWeight: 600, letterSpacing: 1 }}>
+        <p style={{ padding: "0 20%", fontWeight: 600, letterSpacing: 1 }}>
           "Ko-fee" - cái tên mang âm hưởng J'rai, cái tên này như là một lời tri
           ân dành cho những người dân tộc J'rai. Những người con của núi rừng
           Tây Nguyên đã gìn giữ và phát triển nghề trồng cà phê nơi đây. Hơn cả
@@ -114,10 +116,16 @@ function Home() {
           <BeanToBrew />
         </div>
       </div>
-      <div className="kofee-team">
+      {/* <div className="kofee-team">
         <div className="header">KO-FEE TEAMS</div>
         <div>
           <KofeeTeams />
+        </div>
+      </div> */}
+      <div className="kofee-team">
+        <div className="header">KO-FEE TEAMS</div>
+        <div>
+          <Carousele />
         </div>
       </div>
     </div>
