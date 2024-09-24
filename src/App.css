@@ -5,3 +5,12 @@
   font-family: "Montserrat";
   /* font-size: 22px; */
 }
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/DFVN Constructio Grotesk.otf") format("opentype");
+  /* font-weight: normal; */
+  /* font-style: normal; */
+}
+.font-family-custom {
+  font-family: "MyCustomFont";
+}

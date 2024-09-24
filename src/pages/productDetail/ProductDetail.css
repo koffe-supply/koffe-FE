@@ -1,0 +1,20 @@
+.product-detail-page {
+  padding: 20px 40px;
+}
+.product-detail-page .header-breadcrumb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.product-detail-page .header-breadcrumb .icon-breadcrumb {
+  color: #1b392d;
+  font-size: 32px;
+}
+
+.product-detail-page .header-breadcrumb .breadcrumb-item {
+  color: #1b392d;
+  font-size: 12px;
+}
+.product-detail-page .product-space {
+  margin-top: 40px;
+}
