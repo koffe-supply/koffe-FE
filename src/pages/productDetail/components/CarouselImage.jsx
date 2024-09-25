@@ -8,41 +8,27 @@ export default function CarouselImage() {
       <Carousel
         showArrows={true}
         autoPlay={true}
-        centerMode={true}
+        dynamicHeight={false}
+        // centerMode={true}
         // onChange={onChange}
         // onClickItem={onClickItem}
         // onClickThumb={onClickThumb}
       >
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
+          <img src="https://doctormuoi.vn/wp-content/uploads/2021/01/cac-loai-cafe-duoc-yeu-thich.jpg" />
         </div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
-        </div>
-        {/* <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
+          <img src="https://www.mayphache.com/images/users/images/news/cafe-truyen-thong.jpg" />
         </div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
+          <img src="https://www.mayphache.com/images/users/images/news/cafe-truyen-thong.jpg" />
         </div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
+          <img src="https://www.mayphache.com/images/users/images/news/cafe-truyen-thong.jpg" />
         </div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
+          <img src="https://www.mayphache.com/images/users/images/news/cafe-truyen-thong.jpg" />
         </div>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
-        </div>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
-        </div>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
-        </div>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdg2M6jYd_VXOom72AZcp3t3YTcnEGDxSzmA&s" />
-        </div> */}
       </Carousel>
     </div>
   );

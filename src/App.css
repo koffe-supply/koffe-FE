@@ -14,3 +14,11 @@
 .font-family-custom {
   font-family: "MyCustomFont";
 }
+
+:where(
+    .css-dev-only-do-not-override-985vm5
+  ).ant-radio-button-wrapper-checked:not(
+    .ant-radio-button-wrapper-disabled
+  )::before {
+  background-color: #00000000;
+}
